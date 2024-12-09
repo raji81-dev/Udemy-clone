@@ -51,6 +51,7 @@ body {
     padding: 10px;
     border-bottom: 1px solid black;
     justify-content: space-around;
+
 }
 
 .categories p {
@@ -74,7 +75,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
-    
+    gap: 30px;
+  
 }
 
 .course-card {
@@ -112,32 +114,62 @@ body {
 .popular__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 10px;
+    gap: 40px;
+    margin: 10px 0px;
+     
 }
-.footer__one{
+
+.footer__one {
     display: flex;
     gap: 10px;
 }
-.footer__two{
+
+.footer__two {
     display: flex;
     justify-content: space-between;
     margin: 20px;
     align-items: center;
 }
-.footer{
+
+.footer {
     padding: 30px;
     background-color: black;
     color: white;
 }
-.footer__one p{
+
+.footer__one p {
     margin: 20px;
 }
-.categories p:hover{
+
+.categories p:hover {
     background-color: pink;
     color: black;
 }
-.topics__container p:hover{
+
+.topics__container p:hover {
     background-color: gray;
     color: black;
+}
+
+@media(max-width:480px) {
+    .popular__container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .recommened__container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .categories p {
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
 }
